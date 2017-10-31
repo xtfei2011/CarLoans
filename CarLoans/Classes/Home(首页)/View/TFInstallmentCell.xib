@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="TFInstallmentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12期/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfE-mV-Itu">
+                        <rect key="frame" x="8" y="8" width="34" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hne-iX-gvM">
+                        <rect key="frame" x="42" y="0.0" width="29" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59993284940000002" green="0.60003870729999997" blue="0.59992617370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100000.88" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kY4-Up-xig">
+                        <rect key="frame" x="125.5" y="8" width="70.5" height="27.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="134650.89" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khC-Lh-0Eq">
+                        <rect key="frame" x="239.5" y="0.0" width="70.5" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="khC-Lh-0Eq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3or-EW-U1s"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kY4-Up-xig" secondAttribute="bottom" id="4kg-ej-kie"/>
+                    <constraint firstItem="Hne-iX-gvM" firstAttribute="leading" secondItem="pfE-mV-Itu" secondAttribute="trailing" id="6MU-53-kSA"/>
+                    <constraint firstItem="pfE-mV-Itu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="90E-sB-exn"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pfE-mV-Itu" secondAttribute="bottom" id="MaK-Cy-zoe"/>
+                    <constraint firstItem="Hne-iX-gvM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="S8e-sV-RIL"/>
+                    <constraint firstAttribute="trailing" secondItem="khC-Lh-0Eq" secondAttribute="trailing" constant="10" id="Teh-9l-k8t"/>
+                    <constraint firstAttribute="bottom" secondItem="khC-Lh-0Eq" secondAttribute="bottom" id="YBv-z5-A8K"/>
+                    <constraint firstItem="kY4-Up-xig" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Yks-9s-9bz"/>
+                    <constraint firstItem="pfE-mV-Itu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="eBB-gd-Qq3"/>
+                    <constraint firstItem="kY4-Up-xig" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="jOp-ud-4G2"/>
+                    <constraint firstAttribute="bottom" secondItem="Hne-iX-gvM" secondAttribute="bottom" id="npn-Lo-VBH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="interestLabel" destination="khC-Lh-0Eq" id="JtY-fQ-zdt"/>
+                <outlet property="nperLabel" destination="pfE-mV-Itu" id="msV-aK-Lne"/>
+                <outlet property="stagLabel" destination="kY4-Up-xig" id="eil-Ac-wmP"/>
+                <outlet property="totalLabel" destination="Hne-iX-gvM" id="QHD-UM-8ec"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

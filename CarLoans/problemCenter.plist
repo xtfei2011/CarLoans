@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>拥有车辆的中国公民(香港，澳门，台湾暂时除外)，客户年龄在18-60周年之间，车辆在客户本人名下即可申请；车龄需在8年之内，且按揭车也可贷。</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>1.申请人和车辆需满足什么条件？</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>身份证，户口本，机动车登记证，行驶证，保险单等车辆相关材料，本人名下借记卡(用于放款)。</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>2.办理手续需要准备什么证件材料？</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>最高可贷50万，可达车辆估值的90%；利率低至0.36%，1万元贷1年，每月利息仅需36元，低于行业利率10%。</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>3.最高可贷多少钱，利率多少？</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>不需要，车辆仍归您自行使用。</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>4.是否需要将车辆留存在公司？</string>
+	</dict>
+	<dict>
+		<key>infor</key>
+		<array>
+			<dict>
+				<key>answer</key>
+				<string>全部手续均办理成功后，最快2小时即可放款</string>
+			</dict>
+		</array>
+		<key>title</key>
+		<string>5.申请后多久可以放款？</string>
+	</dict>
+</array>
+</plist>

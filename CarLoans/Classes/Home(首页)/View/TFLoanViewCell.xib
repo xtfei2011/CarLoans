@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="126" id="KGk-i7-Jjw" customClass="TFLoanViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="130"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="129.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V36-I2-xYW">
+                        <rect key="frame" x="0.0" y="10" width="375" height="120"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loan" translatesAutoresizingMaskIntoConstraints="NO" id="QDx-bT-c48">
+                                <rect key="frame" x="10" y="20" width="102" height="80"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="2i7-J9-YAN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我有车  我要用钱" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pey-tf-9ru">
+                                <rect key="frame" x="132" y="25" width="233" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="nAs-RY-o1C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="免费咨询热线  4008003820" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXc-an-Ul3">
+                                <rect key="frame" x="132" y="55" width="180" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.59993284940000002" green="0.60003870729999997" blue="0.59992617370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="快速申请 &gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T64-DP-8X0">
+                                <rect key="frame" x="132" y="82" width="84.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.059518031780000001" green="0.70251339670000001" blue="0.92341941599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Pey-tf-9ru" secondAttribute="trailing" constant="10" id="7fC-7u-Tca"/>
+                            <constraint firstItem="QDx-bT-c48" firstAttribute="leading" secondItem="V36-I2-xYW" secondAttribute="leading" constant="10" id="9Vj-Wo-9JD"/>
+                            <constraint firstAttribute="bottom" secondItem="QDx-bT-c48" secondAttribute="bottom" constant="20" id="FKN-L3-8eA"/>
+                            <constraint firstItem="QDx-bT-c48" firstAttribute="top" secondItem="V36-I2-xYW" secondAttribute="top" constant="20" id="HRx-6S-Woc"/>
+                            <constraint firstItem="hXc-an-Ul3" firstAttribute="leading" secondItem="Pey-tf-9ru" secondAttribute="leading" id="Jyh-gM-cfr"/>
+                            <constraint firstItem="T64-DP-8X0" firstAttribute="leading" secondItem="Pey-tf-9ru" secondAttribute="leading" id="Que-U2-4Fc"/>
+                            <constraint firstItem="hXc-an-Ul3" firstAttribute="top" secondItem="Pey-tf-9ru" secondAttribute="bottom" constant="10" id="dFu-Le-r3A"/>
+                            <constraint firstItem="T64-DP-8X0" firstAttribute="top" secondItem="hXc-an-Ul3" secondAttribute="bottom" constant="10" id="e0G-k7-cJv"/>
+                            <constraint firstItem="Pey-tf-9ru" firstAttribute="top" secondItem="QDx-bT-c48" secondAttribute="top" constant="5" id="v6J-U8-9dm"/>
+                            <constraint firstItem="Pey-tf-9ru" firstAttribute="leading" secondItem="QDx-bT-c48" secondAttribute="trailing" constant="20" id="yKu-oZ-fnb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V36-I2-xYW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9jM-LI-zAH"/>
+                    <constraint firstAttribute="trailing" secondItem="V36-I2-xYW" secondAttribute="trailing" id="Ad8-ld-Iu4"/>
+                    <constraint firstItem="V36-I2-xYW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="MBw-D6-7ls"/>
+                    <constraint firstAttribute="bottom" secondItem="V36-I2-xYW" secondAttribute="bottom" id="qns-GA-hZH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.9371530414" green="0.93731355670000005" blue="0.93714290860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <point key="canvasLocation" x="85.5" y="123"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="loan" width="255" height="200"/>
+    </resources>
+</document>

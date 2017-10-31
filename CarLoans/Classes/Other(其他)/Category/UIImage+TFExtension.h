@@ -1,0 +1,16 @@
+//
+//  UIImage+TFExtension.h
+//  CarLoans
+//
+//  Created by 谢腾飞 on 2017/7/10.
+//  Copyright © 2017年 谢腾飞. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UIImage (TFExtension)
+
++ (UIImage *)imageWithName:(NSString *)imageName;
++ (UIImage *)initImageWithName:(NSString *)imageName;
+- (UIImage *)scaleImageWithSize:(CGSize)size;
+@end

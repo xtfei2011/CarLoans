@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TFRegisterViewController">
+            <connections>
+                <outlet property="bottomMargin" destination="ed2-fZ-txk" id="5vG-pr-V7K"/>
+                <outlet property="nextStepBtn" destination="TRt-ND-Pao" id="NVM-Ks-fCR"/>
+                <outlet property="phoneField" destination="cfb-9z-MQk" id="pUZ-M8-QiA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rRE-l4-Bdv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AS6-Jt-18o">
+                            <rect key="frame" x="30" y="150" width="315" height="0.5"/>
+                            <color key="backgroundColor" red="0.9371530414" green="0.93731355670000005" blue="0.93714290860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="jti-L3-YJq"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="常用号码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="cfb-9z-MQk" userLabel="手机号" customClass="TFTextField">
+                            <rect key="frame" x="30" y="110" width="315" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="lzG-Sh-qis"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fQF-jy-Idy">
+                            <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRt-ND-Pao">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="RCl-tx-9fK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="下一步">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="nextStepButtonClick:" destination="-1" eventType="touchUpInside" id="K6R-lK-yHJ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="4ZI-mf-oEx"/>
+                                <constraint firstAttribute="bottom" secondItem="TRt-ND-Pao" secondAttribute="bottom" id="Mgk-WV-Bte"/>
+                                <constraint firstAttribute="trailing" secondItem="TRt-ND-Pao" secondAttribute="trailing" id="Uxi-ao-qoe"/>
+                                <constraint firstItem="TRt-ND-Pao" firstAttribute="leading" secondItem="fQF-jy-Idy" secondAttribute="leading" id="iya-vY-bTS"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="AS6-Jt-18o" secondAttribute="trailing" constant="30" id="9f5-9o-c44"/>
+                        <constraint firstAttribute="bottom" secondItem="fQF-jy-Idy" secondAttribute="bottom" id="CFq-mz-y3h"/>
+                        <constraint firstItem="fQF-jy-Idy" firstAttribute="leading" secondItem="rRE-l4-Bdv" secondAttribute="leading" id="Pq4-nQ-sxA"/>
+                        <constraint firstItem="cfb-9z-MQk" firstAttribute="bottom" secondItem="AS6-Jt-18o" secondAttribute="bottom" id="T8a-tF-P7j"/>
+                        <constraint firstAttribute="trailing" secondItem="fQF-jy-Idy" secondAttribute="trailing" id="UgZ-2F-GO9"/>
+                        <constraint firstItem="cfb-9z-MQk" firstAttribute="leading" secondItem="AS6-Jt-18o" secondAttribute="leading" id="ZTd-q8-NYN"/>
+                        <constraint firstItem="AS6-Jt-18o" firstAttribute="leading" secondItem="rRE-l4-Bdv" secondAttribute="leading" constant="30" id="p3Q-vx-asd"/>
+                        <constraint firstItem="AS6-Jt-18o" firstAttribute="top" secondItem="rRE-l4-Bdv" secondAttribute="top" constant="150" id="rYD-xO-pMW"/>
+                        <constraint firstItem="cfb-9z-MQk" firstAttribute="width" secondItem="AS6-Jt-18o" secondAttribute="width" id="zxE-D6-UqG"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.9371530414" green="0.93731355670000005" blue="0.93714290860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rRE-l4-Bdv" secondAttribute="trailing" id="BlF-mi-qW1"/>
+                <constraint firstItem="rRE-l4-Bdv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HeM-jp-XYv"/>
+                <constraint firstItem="rRE-l4-Bdv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="R4O-jo-Sah"/>
+                <constraint firstAttribute="bottom" secondItem="rRE-l4-Bdv" secondAttribute="bottom" id="ed2-fZ-txk"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="66.5"/>
+        </view>
+    </objects>
+</document>

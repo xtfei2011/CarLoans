@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TFForgotController">
+            <connections>
+                <outlet property="bottomMargin" destination="nTz-aO-MCS" id="IiF-d7-Sjg"/>
+                <outlet property="passwordField" destination="Aax-3s-45A" id="gkb-Ui-DZ2"/>
+                <outlet property="submitBtn" destination="t4N-VS-1ty" id="jid-lD-Msf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fMe-OH-8A6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qTI-Wa-sdL">
+                            <rect key="frame" x="30" y="150" width="315" height="0.5"/>
+                            <color key="backgroundColor" red="0.9371530414" green="0.93731355670000005" blue="0.93714290860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="EAF-yN-wd0"/>
+                            </constraints>
+                        </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="设置新密码(6-18位数字和字母)" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Aax-3s-45A" userLabel="新密码" customClass="TFTextField">
+                            <rect key="frame" x="30" y="110" width="315" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="x1e-JN-KVI"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" keyboardType="namePhonePad"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="1vb-qa-VfB"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nOb-l6-JB4">
+                            <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4N-VS-1ty">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="wrD-pM-toR"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="提交">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="submitButtonClick:" destination="-1" eventType="touchUpInside" id="mtD-Ie-dpZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="t4N-VS-1ty" firstAttribute="leading" secondItem="nOb-l6-JB4" secondAttribute="leading" id="6Da-fg-V8j"/>
+                                <constraint firstAttribute="trailing" secondItem="t4N-VS-1ty" secondAttribute="trailing" id="NsW-Se-ViU"/>
+                                <constraint firstAttribute="bottom" secondItem="t4N-VS-1ty" secondAttribute="bottom" id="XOO-bs-avO"/>
+                                <constraint firstAttribute="height" constant="44" id="wNK-4f-qDV"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Aax-3s-45A" firstAttribute="leading" secondItem="qTI-Wa-sdL" secondAttribute="leading" id="FM3-af-oQA"/>
+                        <constraint firstAttribute="trailing" secondItem="qTI-Wa-sdL" secondAttribute="trailing" constant="30" id="L4n-Mm-4LO"/>
+                        <constraint firstItem="qTI-Wa-sdL" firstAttribute="top" secondItem="fMe-OH-8A6" secondAttribute="top" constant="150" id="LWO-6a-3dC"/>
+                        <constraint firstAttribute="bottom" secondItem="nOb-l6-JB4" secondAttribute="bottom" id="RnD-R7-UgI"/>
+                        <constraint firstItem="qTI-Wa-sdL" firstAttribute="leading" secondItem="fMe-OH-8A6" secondAttribute="leading" constant="30" id="WbP-QA-xxn"/>
+                        <constraint firstAttribute="trailing" secondItem="nOb-l6-JB4" secondAttribute="trailing" id="Zfv-vS-oMB"/>
+                        <constraint firstItem="nOb-l6-JB4" firstAttribute="leading" secondItem="fMe-OH-8A6" secondAttribute="leading" id="keJ-6x-nTI"/>
+                        <constraint firstItem="Aax-3s-45A" firstAttribute="bottom" secondItem="qTI-Wa-sdL" secondAttribute="bottom" id="uIe-db-raQ"/>
+                        <constraint firstItem="Aax-3s-45A" firstAttribute="width" secondItem="qTI-Wa-sdL" secondAttribute="width" id="woj-pB-hVe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fMe-OH-8A6" secondAttribute="trailing" id="Uhm-HJ-bLt"/>
+                <constraint firstItem="fMe-OH-8A6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gbF-uw-ANd"/>
+                <constraint firstAttribute="bottom" secondItem="fMe-OH-8A6" secondAttribute="bottom" id="nTz-aO-MCS"/>
+                <constraint firstItem="fMe-OH-8A6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="syc-Ti-Nv4"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

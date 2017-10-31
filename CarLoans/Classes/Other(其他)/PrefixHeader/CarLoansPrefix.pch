@@ -1,0 +1,97 @@
+//
+//  CarLoansPrefix.pch
+//  CarLoans
+//
+//  Created by 谢腾飞 on 2017/7/6.
+//  Copyright © 2017年 谢腾飞. All rights reserved.
+//
+
+#ifndef CarLoansPrefix_pch
+#define CarLoansPrefix_pch
+
+/*** 如果希望某些内容能拷贝到任何源代码文件(OC\C\C++等), 那么就不要写在#ifdef __OBJC__和#endif之间 ***/
+
+
+/***** 在#ifdef __OBJC__和#endif之间的内容, 只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中 *****/
+#ifdef __OBJC__
+
+#import "UIView+TFExtension.h"
+#import "UIBarButtonItem+TFExtension.h"
+#import "NSString+TFExtension.h"
+#import "UIImage+TFExtension.h"
+#import "TFAlertView.h"
+#import "TFNetworkTools.h"
+#import "TFShareManager.h"
+#import <UMSocialCore/UMSocialCore.h>
+#import "TFProgressHUD.h"
+#import "UIButton+TFExtension.h"
+#import "TFTextField.h"
+#import "TFConst.h"
+#import "InterfacePrefix.pch"
+#import "TFAccountTool.h"
+#import "MJExtension.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+
+/*** 友盟分享 KEY***/
+#define shareNameArray @[@"微信",@"朋友圈",@"QQ空间",@"QQ"]
+#define shareImageArray @[@"wechat",@"companion",@"space",@"tencent"]
+
+#define QQAPPID @"1105752462"
+#define QQAPPKEY @"1E3ZCP8LLkeDhR9G"
+#define WXAPPID @"wx1cf2fb47c6c6de81"
+#define WXSecret @"736dab0a6e2cb1ac88fc0fbfdc705ffb"
+
+
+/*** 屏幕大小尺寸 ***/
+#define TFScreeFrame                [UIScreen mainScreen].bounds
+#define TFMainScreen_Size           [UIScreen mainScreen].bounds.size
+#define TFMainScreen_Width          [UIScreen mainScreen].bounds.size.width
+#define TFMainScreen_Height         [UIScreen mainScreen].bounds.size.height
+#define TFSelfScreen_Size           self.view.bounds.size
+
+/*** 滚动视图高度 ***/
+#define ScrollViewHeight            340 * TFMainScreen_Width / 720
+
+/*** 字体 ***/
+#define TFCommentTitleFont          [UIFont systemFontOfSize:12]
+#define TFCommentSubTitleFont       [UIFont systemFontOfSize:11]
+#define TFMoreTitleFont             [UIFont systemFontOfSize:14]
+#define TFSetPromptTitleFont        [UIFont systemFontOfSize:16]
+
+
+#define CGRectSetX(rect, x) rect = CGRectMake(x, rect.origin.y, rect.size.width, rect.size.height)
+#define CGRectSetY(rect, y) rect = CGRectMake(rect.origin.x, y, rect.size.width, rect.size.height)
+#define CGRectSetW(rect, w) rect = CGRectMake(rect.origin.x, rect.origin.y, w, rect.size.height)
+#define CGRectSetH(rect, h) rect = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, h)
+
+/*** 日志 ***/
+#ifdef DEBUG
+#define TFLog(...) NSLog(__VA_ARGS__)
+#else
+#define TFLog(...)
+#endif
+
+#define TFLogFunc TFLog(@"%s", __func__);
+
+/*** 颜色 ***/
+#define TFRGBColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+#define TFColor(r, g, b) TFRGBColor((r), (g), (b), 255)
+#define TFRandomColor TFColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+#define TFrayColor(v) TFColor((v), (v), (v))
+#define TFCommonBgColor TFrayColor(206)
+#define TFGlobalBg TFColor(239, 239, 239)
+
+/*** 本地保存 ***/
+#define TFUSER_DEFAULTS  [NSUserDefaults standardUserDefaults]
+
+/*** 根控制器 ***/
+#define TFkeyWindowView [UIApplication sharedApplication].keyWindow
+
+/*** 缓存路径 ***/
+#define TFCustomCacheFile [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"CarLoans"]
+
+#endif
+/***** 在#ifdef __OBJC__和#endif之间的内容, 只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中 *****/
+
+#endif /* CarLoansPrefix_pch */
